@@ -4,9 +4,10 @@
 
 ### Lifecycle  
 
-* [`docker create`](https://docs.docker.com/engine/reference/commandline/create) creates a container but does not start it.
-* [`docker rm`](https://docs.docker.com/engine/reference/commandline/rm) deletes a container.
+* [`docker create --name <name> <image-name>`](https://docs.docker.com/engine/reference/commandline/create) creates a container but does not start it.
+* [`docker rm <names>`](https://docs.docker.com/engine/reference/commandline/rm) remove one or more containers.
 
+`docker rm $(docker ps -a -q)` remove all stopped containers
 
 ### Info  
 
@@ -20,5 +21,6 @@
 ## Images  
 
 ### Lifecycle  
-* [`docker rmi`](https://docs.docker.com/engine/reference/commandline/rmi) removes an image.
+* [`docker pull <name>`](https://docs.docker.com/engine/reference/commandline/pull) pulls an image from registry to local machine.
+* [`docker rmi <names>`](https://docs.docker.com/engine/reference/commandline/rmi) remove one or more images.
 
