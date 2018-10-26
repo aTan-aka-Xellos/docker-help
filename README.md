@@ -14,9 +14,10 @@
 * [`docker ps -a`](https://docs.docker.com/engine/reference/commandline/ps) shows all (-a) containers.
 * [`docker inspect`](https://docs.docker.com/engine/reference/commandline/inspect) looks at all the info on a container (including IP address).
 * [`docker port`](https://docs.docker.com/engine/reference/commandline/port) shows public facing port of container.
-
-
 * [`docker stats --all`](https://docs.docker.com/engine/reference/commandline/stats) display a live stream of container(s) resource usage statistics.
+
+`docker inspect --format="{{.Id}}" <container_name>` get container Id  
+`Enter-PSSession -ContainerId <Id> -RunAsAdministrator` create PS session using container Id
 
 ## Images  
 
